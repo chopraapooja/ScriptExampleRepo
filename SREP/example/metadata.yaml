@@ -5,22 +5,22 @@ author: qhua948
 rbac:
     roleNameSpace: "kube-system"
     roleRules:
-        verbs:
+        - verbs:
             - "*"
-        apiGroups:
+          apiGroups:
             - ""
-        resources:
+          resources:
             - "*"
-        resourceNames:
+          resourceNames:
             - "*"
     clusterRoleRules:
-        verbs:
+        - verbs:
             - "*"
-        apiGroups:
+          apiGroups:
             - ""
-        resources:
+          resources:
             - "*"
-        resourceNames:
+          resourceNames:
             - "*"
 envs:
   - key: "alpha"
