@@ -1,0 +1,29 @@
+file: script.sh
+name: example script
+description: just an example
+author: qhua948
+rbac:
+    roleNameSpace: "kube-system"
+    roleRules:
+        verbs:
+            - "*"
+        apiGroups:
+            - ""
+        resources:
+            - "*"
+        resourceNames:
+            - "*"
+    clusterRoleRules:
+        verbs:
+            - "*"
+        apiGroups:
+            - ""
+        resources:
+            - "*"
+        resourceNames:
+            - "*"
+envs:
+  - key: "alpha"
+    description: "alpha deSC"
+    optional: false
+language: bash
