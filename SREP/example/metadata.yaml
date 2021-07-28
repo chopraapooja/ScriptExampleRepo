@@ -1,5 +1,6 @@
 file: script.sh
-name: example script
+name: example
+
 description: just an example
 author: qhua948
 rbac:
