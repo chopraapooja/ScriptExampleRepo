@@ -30,4 +30,4 @@ envs:
 language: bash
 
 allowedGroups: 
-    - "SREP"
+    - SREP
