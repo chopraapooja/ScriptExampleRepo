@@ -1,18 +1,20 @@
 file: script.sh
 name: example
-
 description: just an example
 author: pooja
+allowedGroups: 
+  - SREP
 rbac:
-    roleNameSpace: "kube-system"
-    roleRules:
-        - verbs:
+    roles:
+      - namespace: "kube-system"
+        rules:
+          - verbs:
             - "*"
-          apiGroups:
+            apiGroups:
             - ""
-          resources:
+            resources:
             - "*"
-          resourceNames:
+            resourceNames:
             - "*"
     clusterRoleRules:
         - verbs:
@@ -25,9 +27,6 @@ rbac:
             - "*"
 envs:
   - key: "alpha"
-    description: "alpha deSC"
+    description: "alpha desc"
     optional: false
 language: bash
-
-allowedGroups: 
-    - SREP
