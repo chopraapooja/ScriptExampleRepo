@@ -2,7 +2,7 @@ file: script.sh
 name: example
 
 description: just an example
-author: qhua948
+author: pooja
 rbac:
     roleNameSpace: "kube-system"
     roleRules:
@@ -28,5 +28,6 @@ envs:
     description: "alpha deSC"
     optional: false
 language: bash
+
 allowedGroups: 
     - "SREP"
